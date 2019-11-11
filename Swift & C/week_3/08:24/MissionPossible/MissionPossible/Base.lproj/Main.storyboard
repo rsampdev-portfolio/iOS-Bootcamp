@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-wu-M2Z">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edf-uj-Pt9">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Edf-uj-Pt9" secondAttribute="height" multiplier="1:1" id="lqn-Tu-mJ5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setLeftCounterButtonText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1C-a8-si5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcP-bQ-i2g">
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetCounterButtonValues:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jFj-az-WrL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gme-pc-spy">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gme-pc-spy" secondAttribute="height" multiplier="1:1" id="XXX-s6-8LF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setRightCounterButtonText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7LW-uq-XZy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Them" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9h-d2-DhP">
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xno-d7-mhD">
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fo6-wu-M2Z" secondAttribute="bottom" id="01o-lQ-saZ"/>
+                            <constraint firstItem="Edf-uj-Pt9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0pq-D3-kad"/>
+                            <constraint firstItem="Edf-uj-Pt9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="7TF-17-b2o"/>
+                            <constraint firstItem="Gme-pc-spy" firstAttribute="top" secondItem="Y9h-d2-DhP" secondAttribute="bottom" constant="8" id="8Ux-UP-FRZ"/>
+                            <constraint firstAttribute="bottom" secondItem="vcP-bQ-i2g" secondAttribute="bottom" constant="20" symbolic="YES" id="8uP-VQ-BGd"/>
+                            <constraint firstItem="xno-d7-mhD" firstAttribute="centerX" secondItem="Edf-uj-Pt9" secondAttribute="centerX" id="CIY-we-uhH"/>
+                            <constraint firstItem="Gme-pc-spy" firstAttribute="baseline" secondItem="Edf-uj-Pt9" secondAttribute="baseline" id="EsP-3d-tSZ"/>
+                            <constraint firstItem="fo6-wu-M2Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HR0-Y1-wbI"/>
+                            <constraint firstItem="Y9h-d2-DhP" firstAttribute="leading" secondItem="xno-d7-mhD" secondAttribute="trailing" constant="67" id="Oxz-Hx-o7d"/>
+                            <constraint firstItem="vcP-bQ-i2g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="TTw-kr-ycQ"/>
+                            <constraint firstItem="Gme-pc-spy" firstAttribute="width" secondItem="Gme-pc-spy" secondAttribute="height" multiplier="1:1" id="css-AY-Xto"/>
+                            <constraint firstAttribute="trailing" secondItem="fo6-wu-M2Z" secondAttribute="trailing" id="ioj-Uh-7U1"/>
+                            <constraint firstItem="fo6-wu-M2Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lEu-oL-8iX"/>
+                            <constraint firstItem="Gme-pc-spy" firstAttribute="leading" secondItem="Edf-uj-Pt9" secondAttribute="trailing" constant="47" id="pns-qP-omb"/>
+                            <constraint firstItem="Edf-uj-Pt9" firstAttribute="top" secondItem="xno-d7-mhD" secondAttribute="bottom" constant="8" id="v03-c9-bvU"/>
+                            <constraint firstItem="vcP-bQ-i2g" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-64" id="yic-lc-aqq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftCounterButton" destination="Edf-uj-Pt9" id="G7E-a3-Pqi"/>
+                        <outlet property="rightCounterButton" destination="Gme-pc-spy" id="vg1-wl-emP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-326.25" y="-57.04225352112676"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+    </resources>
+</document>
