@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DossierViewController" customModule="Dossiers" customModuleProvider="target">
+            <connections>
+                <outlet property="knownAssociatesTextField" destination="A7L-wg-UcS" id="Jer-MN-jRi"/>
+                <outlet property="languagesSpokenTextField" destination="gtI-EB-UxY" id="V2g-fa-wRk"/>
+                <outlet property="lastKnownLocationTextField" destination="wv7-ti-q1l" id="AtV-gC-I5y"/>
+                <outlet property="nameTextField" destination="QAT-Tf-dAK" id="fWI-Nx-aCr"/>
+                <outlet property="occupationTextField" destination="hie-g6-wzt" id="oRd-ze-btJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ylW-1z-9Ma"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oW6-Ip-aIC">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAT-Tf-dAK">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="saveText:" destination="-1" eventType="editingDidEnd" id="gIS-PX-ULl"/>
+                                <outlet property="delegate" destination="-1" id="qm5-WM-GuL"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wv7-ti-q1l">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="saveText:" destination="-1" eventType="editingDidEnd" id="m10-mW-DhN"/>
+                                <outlet property="delegate" destination="-1" id="yjN-3y-dqO"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7L-wg-UcS">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="saveText:" destination="-1" eventType="editingDidEnd" id="UlH-ca-Pgh"/>
+                                <outlet property="delegate" destination="-1" id="ogU-cq-y84"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hie-g6-wzt">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="saveText:" destination="-1" eventType="editingDidEnd" id="Pam-L8-fBq"/>
+                                <outlet property="delegate" destination="-1" id="eSW-cm-YZG"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtI-EB-UxY">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="saveText:" destination="-1" eventType="editingDidEnd" id="ccs-sZ-JnO"/>
+                                <outlet property="delegate" destination="-1" id="3Qe-jr-Oa4"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gtI-EB-UxY" firstAttribute="width" secondItem="oW6-Ip-aIC" secondAttribute="width" id="4fY-BN-OjU"/>
+                        <constraint firstItem="QAT-Tf-dAK" firstAttribute="width" secondItem="oW6-Ip-aIC" secondAttribute="width" id="MFg-PA-tgg"/>
+                        <constraint firstItem="A7L-wg-UcS" firstAttribute="width" secondItem="oW6-Ip-aIC" secondAttribute="width" id="SUX-n8-SqZ"/>
+                        <constraint firstItem="hie-g6-wzt" firstAttribute="width" secondItem="oW6-Ip-aIC" secondAttribute="width" id="bsR-tk-pgu"/>
+                        <constraint firstItem="wv7-ti-q1l" firstAttribute="width" secondItem="oW6-Ip-aIC" secondAttribute="width" id="r3c-nd-UjB"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="oW6-Ip-aIC" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="5:6" id="5ag-45-yn0"/>
+                <constraint firstAttribute="bottom" secondItem="oW6-Ip-aIC" secondAttribute="bottom" id="6sm-hl-8W7"/>
+                <constraint firstItem="oW6-Ip-aIC" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="aGG-Us-9nv"/>
+                <constraint firstItem="oW6-Ip-aIC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="l2y-XY-ilf"/>
+                <constraint firstAttribute="trailing" secondItem="oW6-Ip-aIC" secondAttribute="trailing" id="oRl-3b-6lf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

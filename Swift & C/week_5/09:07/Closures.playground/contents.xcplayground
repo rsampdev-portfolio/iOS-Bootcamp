@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Map P1'/>
+        <page name='Map P2'/>
+        <page name='Map P3'/>
+        <page name='Untitled Page'/>
+    </pages>
+</playground>
