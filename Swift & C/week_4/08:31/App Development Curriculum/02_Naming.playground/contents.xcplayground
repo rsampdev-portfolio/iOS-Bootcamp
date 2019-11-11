@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='00-Introduction'/>
+        <page name='01-PetProblem'/>
+        <page name='02-PetProblem2'/>
+        <page name='03-Naming'/>
+        <page name='04-Autocompletion'/>
+        <page name='05-NamingConventions'/>
+        <page name='06-GoodNames'/>
+        <page name='07-Constants'/>
+        <page name='08-WrapUp'/>
+        <page name='09-ExerciseShow'/>
+        <page name='10-ExerciseLottery'/>
+        <page name='11-ExerciseiPhone'/>
+        <page name='12-ExerciseMorning'/>
+        <page name='13-ExerciseNaming'/>
+    </pages>
+</playground>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='01-Introduction'/>
+        <page name='02-Tour'/>
+        <page name='03-Calculations'/>
+        <page name='04-Comments'/>
+        <page name='05-Wrong'/>
+        <page name='06-Errors'/>
+        <page name='07-WrapUp'/>
+    </pages>
+</playground>
